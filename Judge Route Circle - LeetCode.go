@@ -1,6 +1,6 @@
 /*
 Judge Route Circle - LeetCode
-Initially, there is a Robot at position (0, 0). Given a sequence of its moves, judge if this robot makes a circle, which means it moves back to the original place. 
+Initially, there is a Robot at position (0, 0). Given a sequence of its moves, judge if this robot makes a circle, which means it moves back to the original place.
 
 
 
@@ -22,19 +22,20 @@ Output: false
 */
 package main
 
-import(
+import (
 	"fmt"
 )
-func judgeCircle(moves string) bool{
+
+func judgeCircle(moves string) bool {
 	i, j := 0, 0
-	for _, step := range moves{
-		if step == 'U'{
+	for _, step := range moves {
+		if step == 'U' {
 			i += 1
-		}else if step == 'D'{
+		} else if step == 'D' {
 			i -= 1
-		}else if step == 'L'{
+		} else if step == 'L' {
 			j -= 1
-		}else if step == 'R'{
+		} else if step == 'R' {
 			j += 1
 		}
 
@@ -42,9 +43,9 @@ func judgeCircle(moves string) bool{
 	return i == 0 && j == 0
 }
 
-func main(){
+func main() {
 	var a string = "UUUUUDDDD"
-	for i := range a{
-		fmt.Println(i)	
+	for i := range a {
+		fmt.Println(i)
 	}
 }
