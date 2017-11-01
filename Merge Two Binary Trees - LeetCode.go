@@ -34,7 +34,7 @@ The merging process must start from the root nodes of both trees.
 package main
 
 type TreeNode struct {
-	Var   int
+	Val   int
 	Left  *TreeNode
 	Right *TreeNode
 }
